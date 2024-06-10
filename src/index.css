@@ -1,13 +1,61 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 22px;
+}
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+main {
+  display: flex;
+  justify-content: center;
+  
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.unorderList {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.unorderList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: larger;
+}
+
+.unorderList li input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.5);
+}
+.unorderList label{
+  text-decoration: underline;
+}
+.unorderList svg {
+  color:steelblue;
+  cursor: pointer;
+}
+.unorderList svg:hover{
+  color: red
+
 }
