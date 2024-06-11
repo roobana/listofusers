@@ -1,6 +1,9 @@
 import React from "react";
 
-export default function Footer() {
-  const year = new Date();
-  return <footer>CopyRight &copy;{year.getFullYear()} </footer>;
+export default function Footer({ length }) {
+  return (
+    <footer>
+      {length}List {length === 1 ? "item" : "items"}
+    </footer>
+  );
 }
