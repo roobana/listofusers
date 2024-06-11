@@ -34,7 +34,7 @@ export default function App() {
     localStorage.setItem("todo-list", JSON.stringify(listItems));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmits = (e) => {
     e.preventDefault();
     if (!newItem) return;
     console.log("submitted");
@@ -61,7 +61,7 @@ export default function App() {
       <AddInputItems
         newItem={newItem}
         setNewItem={setNewItem}
-        handleSubmit={handleSubmit}
+        handleSubmit={handleSubmits}
       />
       <Content
         items={items}
